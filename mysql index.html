@@ -1,5 +1,15 @@
 sudo apt install apache2 php libapache2-mod-php php-mysql mysql-server -y
 
+
+CREATE DATABASE studentdb;
+USE studentdb;
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100)
+);
+EXIT;
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
